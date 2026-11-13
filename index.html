@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ia nutricion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor-principal">
+    <!-- Estructura basada exactamente en el boceto[cite: 1] -->
+    <section id="zona-de-chat" class="zona-de-chat" aria-label="zona de chat" aria-live="polite">
+      <div class="mensaje mensaje-agente">
+        <p class="texto-mensaje">Hola, soy ia nutricion. Pedime recomendaciones de recetas o ideas para armar tu dieta.</p>
+      </div>
+    </section>
+
+    <form id="zona-de-escritura" class="zona-de-escritura" aria-label="zona de escritura">
+      <input 
+        type="text" 
+        id="campo-mensaje" 
+        class="campo-mensaje" 
+        placeholder="Escribí tu consulta sobre recetas o dietas..." 
+        maxlength="500" 
+        autocomplete="off"
+        required
+      >
+      <button type="submit" id="boton-enviar" class="boton-enviar">Enviar</button>
+    </form>
+  </main>
+
+  <!-- Carga obligatoria de config.js antes de script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
